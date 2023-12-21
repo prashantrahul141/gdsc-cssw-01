@@ -1,0 +1,225 @@
+/* importing fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400&display=swap");
+
+/* css resets: make everything look same on every browser */
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+code,
+img,
+dl,
+article,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* actual styling */
+body {
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  --light-green: #109d58;
+  --light-blue: #4385f3;
+  --light-yellow: #fabc05;
+  --light-red: #e94436;
+  --text-zinc: #515558;
+  --font-name-head: Poppins;
+  --font-name-sub: Roboto;
+}
+
+/* the container square*/
+#container {
+  border: solid 1px red;
+  width: 100vmin;
+  aspect-ratio: 1/1;
+  margin: auto;
+}
+
+/* the container circle */
+#element {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: solid 1px green;
+  overflow: hidden;
+  position: relative;
+}
+
+/* green circle on top */
+#green-circle {
+  width: 23%;
+  aspect-ratio: 1/1;
+  background-color: var(--light-green);
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* top blue square 1 */
+#blue-square-1 {
+  aspect-ratio: 1/1;
+  height: 23%;
+  width: 38.5%;
+  border-radius: 4px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--light-blue);
+}
+
+/* text wrapper for heading */
+#text-wrapper-1 {
+  position: absolute;
+  top: 48%;
+  transform: translate(0%, -50%);
+  right: 12%;
+  color: var(--text-zinc);
+
+  font-family: var(--font-name-head);
+  font-size: 9.9vmin;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+}
+
+/* text wrapper for sub text */
+#text-wrapper-2 {
+  position: absolute;
+  top: 63%;
+  transform: translate(0%, -50%);
+  right: 12%;
+  color: var(--text-zinc);
+
+  font-family: var(--font-name-sub);
+  font-size: 2.99vmin;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* gdsc logo */
+#logo-wrapper {
+  width: 7vmin;
+}
+
+/* bottom blue square */
+#blue-square-2 {
+  aspect-ratio: 1/1;
+  height: 47%;
+  width: 26%;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-color: var(--light-blue);
+}
+
+/* bottom red square */
+#red-square {
+  aspect-ratio: 1/1;
+  height: 22%;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: -1;
+  background-color: var(--light-red);
+}
+
+/* bottom yellow square */
+#yellow-square {
+  aspect-ratio: 1/1;
+  height: 22%;
+  width: 38%;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 0%;
+  left: 26%;
+  background-color: var(--light-yellow);
+}
+
+/* bottom yellow circle */
+#yellow-circle {
+  aspect-ratio: 1/1;
+  height: 22%;
+  border-radius: 100%;
+
+  position: absolute;
+  bottom: 0%;
+  left: 53%;
+  background-color: var(--light-yellow);
+}
+
+/* green outline square */
+#green-outline-square {
+  aspect-ratio: 1/1;
+  height: 8%;
+  border-radius: 4px;
+
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-30%);
+  z-index: 10;
+  border: solid 4px var(--light-green);
+}
+
+/* desktops */
+@media only screen and (min-width: 900px) {
+}
